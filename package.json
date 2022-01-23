@@ -1,0 +1,22 @@
+{
+  "name": "mstechcamp12-chat",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "start:api": "cd api && npm run start",
+    "start:swa": "swa start http://localhost:3000 --run \"yarn dev\" --api-location /api"
+  },
+  "dependencies": {
+    "@microsoft/signalr": "^6.0.1",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@azure/static-web-apps-cli": "^0.8.2",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  }
+}
